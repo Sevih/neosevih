@@ -77,7 +77,6 @@ bot.on('message', function(message) {
     //// Interaction
     if(message.content === prefix + "miaou"){
         message.channel.send("miaou");
-        message.channel.send(".cat");
     }
 
     if (message.content === prefix + "Sardoche"){
