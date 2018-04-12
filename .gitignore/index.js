@@ -8,7 +8,7 @@ bot.on('ready', () =>{
     bot.user.setGame('Basura des mères');
 });
 
-bot.login('NDMzOTE0MTgzNjEzMDIyMjE4.DbCxmg.cOd9Hduz7gZdz7zWczP1fC9OtJ4')
+bot.login(process.env.TOKEN)
 
 bot.on('message', message => {
     if(message.content === "ping"){
