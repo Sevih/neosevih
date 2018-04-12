@@ -31,7 +31,8 @@ var phraseClasse = [
     "Mauvais choix, tu ferai de changer de classe mais bon : ",
     "Tes mates sont nazes et tu veux les carry ? Alors ce guide est pour toi : ",
     "T'en as marre de te sentir naze ? Laisse-moi être ton ami... juste cette fois : ",
-    "Si t'as pas de dps, prends ça : "
+    "Si t'as pas de dps, prends ça : ",
+    "Encore toi ?! Tu sais rien jouer decidement :"
 ];
 
 
