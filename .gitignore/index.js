@@ -28,11 +28,12 @@ var phraseClasse = [
     "Google est ton ami mais bon j'vais t'aider : ",
     "Nan mais allo quoi, t'as besoin d'un guide pour DPS ?! ",
     "Mec, j'arrive pas a jouer avec les singes alors tiens : ",
-    "Mauvais choix, tu ferai de changer de classe mais bon : ",
+    "Mauvais choix, tu ferais mieux de changer de classe mais bon : ",
     "Tes mates sont nazes et tu veux les carry ? Alors ce guide est pour toi : ",
     "T'en as marre de te sentir naze ? Laisse-moi être ton ami... juste cette fois : ",
     "Si t'as pas de dps, prends ça : ",
-    "Encore toi ?! Tu sais rien jouer decidement :"
+    "Encore toi ?! Tu sais rien jouer decidement :",
+    "T'as pas de skill et t'es moche.... sois juste moche :",
 ];
 
 
