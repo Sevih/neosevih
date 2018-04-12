@@ -19,8 +19,5 @@ bot.on('message', message => {
     if(message.content.indexOf('moonlord') !== -1){
         message.reply("tu veux dire 'trashlord', non ?");
     }
-    
-    if(message.content.indexOf('miaou') !== -1){
-        message.channel.send("miaou");
-    }
+   
 });
