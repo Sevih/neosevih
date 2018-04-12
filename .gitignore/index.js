@@ -45,7 +45,7 @@ bot.on('message', function(message) {
         var help_embed = new Discord.RichEmbed()
         .setColor('#D9F200')
         .addField("Basique","!help : affiche les commandes du Bot\n!guide : guide des classes")
-        .addField("Intercation","!Sardoche : une dose de Sel ?\n*ping : une petite partie ?\n");
+        .addField("Intercation","!Sardoche : une dose de Sel ?\n!miaou : vive les chats\n");
         message.channel.send(help_embed);
         console.log('commande HELP demandée.');
     }
@@ -75,12 +75,11 @@ bot.on('message', function(message) {
     }
     //// Interaction
     if(message.content === prefix + "miaou"){
-        console.log('miaou demandé');
         message.channel.send("miaou");
+        message.channel.send(".cat");
     }
 
     if (message.content === prefix + "Sardoche"){
-        console.log('sardoche demandé.');
         message.channel.send("Nique ta mère numéricable!\nNique ta mère Riot games!\nAllez tous vous faire enculer!");
         
     }
