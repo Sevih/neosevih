@@ -15,4 +15,8 @@ bot.on('message', message => {
         message.reply("pong");
         console.log("ping / pong ok");
     }
+    
+    if(message.content.indexOf('moonlord') !== -1){
+        message.reply("tu veux dire 'trashlord', non ?");
+    }
 });
