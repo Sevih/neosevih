@@ -44,8 +44,8 @@ bot.on('message', function(message) {
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
         .setColor('#D9F200')
-        .addField("Basique","*help : affiche les commandes du Bot\n")
-        .addField("Intercation","*Sardoche : une dose de Sel ?\n*ping : une petite partie ?\n*Comment vas tu Neo Sevih ? : prenez des nouvelles\n");
+        .addField("Basique","!help : affiche les commandes du Bot\n!guide : guide des classes")
+        .addField("Intercation","!Sardoche : une dose de Sel ?\n*ping : une petite partie ?\n");
         message.channel.send(help_embed);
         console.log('commande HELP demandée.');
     }
@@ -110,6 +110,5 @@ function randomArray(array){
     min = 0;
     max = (array.length);
     randnum = Math.floor((Math.random() * max));
-    console.log(randnum);
     return array[randnum];
 }
