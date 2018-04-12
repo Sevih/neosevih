@@ -7,7 +7,7 @@ bot.on('ready', () =>{
     console.log("Ok, prêt à basura des mères !!");
 });
 
-bot.login('NDMzOTE0MTgzNjEzMDIyMjE4.DbCxmg.cOd9Hduz7gZdz7zWczP1fC9OtJ4')
+bot.login('process.env.TOKEN')
 
 bot.on('message', message => {
     if(message.content === "ping"){
