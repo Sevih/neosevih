@@ -56,11 +56,9 @@ bot.on('message', function(message) {
         var quote = randomArray(phraseClasse);
         switch (args[0]){
             case "gladiator":
-                console.log('a');
                 message.channel.send(quote+"\n https://dn-project.fr/class-guide/warrior/gladiator");
                 break;
             case "moonlord":
-                console.log('b');
                 message.channel.send(quote+"\n https://dn-project.fr/class-guide/warrior/moonlord");
                 break;
 
@@ -71,6 +69,7 @@ bot.on('message', function(message) {
             .addField("syntaxe de la commande !guide","!guide [classe]\n");
             message.channel.send(help_embed);
             var classText = getAllClasse();
+            message.channel.send("Guides disponibles :")
             message.channel.send(classText);
         }
     }
