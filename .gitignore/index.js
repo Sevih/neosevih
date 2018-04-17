@@ -9,14 +9,16 @@ bot.on('ready', () =>{
 });
 var randnum = 0;
 var prefix = ('!');
-var classeGuide = ['gladiator','moonlord'];
+var classeGuide = ['gladiator','moonlord','barbarian'];
 var classeClass = {
     'gladiator':'Warrior',
     'moonlord':'Warrior',
+    'barbarian':'Warrior',
 };
 var classeEmote = {
     'gladiator':'<:gladiator:432310951409352726>',
     'moonlord':'<:moonlord:432312622675918852>',
+    'barbarian':'<:barbarian:432312622386380810>',
 };
 
 var phraseClasse = [
@@ -62,6 +64,9 @@ bot.on('message', function(message) {
                 break;
             case "moonlord":
                 message.channel.send(quote+"\n https://dn-project.fr/class-guide/warrior/moonlord");
+                break;
+            case "barbarian":
+                message.channel.send(quote+"\n https://dn-project.fr/class-guide/warrior/barbarian");
                 break;
 
 
