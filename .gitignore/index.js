@@ -21,8 +21,11 @@ var classeEmote = {
     'barbarian':'<:barbarian:432312622386380810>',
     'saint':'<:saint:432312622935703562>',
     'blood phantom':'<:bloodphantom:435785625611010058>',
-    'inquisitor':'<inquisitor:436191905114751026>',
+    'inquisitor':'<inquisitor:436200563906969600>',
     'illumia':'<:illumia:432312622671593474>',
+    'destroyer':'<:destroyer:436201107245760513>',
+    'ruina':'<:ruina:436201033350512644>',
+    'oracle elder':'<:oracleelder:432312622931509248>',
 };
 
 var phraseClasse = [
