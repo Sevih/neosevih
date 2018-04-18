@@ -59,7 +59,7 @@ bot.on('message', function(message) {
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
         .setColor('#D9F200')
-        .addField("Basique","!help : affiche les commandes du Bot\n!guide : guide des classes")
+        .addField("Basique","!help : affiche les commandes du Bot\n!guide : guide des classes\n!rules : règles de la guilde\n!officier : liste des officiers de la guilde")
         .addField("Intercation","!Sardoche : une dose de Sel ?\n!miaou : vive les chats\n");
         message.channel.send(help_embed);
         console.log('commande HELP demandée.');
