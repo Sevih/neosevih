@@ -16,15 +16,15 @@ var classeClass = {
     'barbarian':'Warrior',
 };
 var classeEmote = {
-    'gladiator':'<:gladiator:432310951409352726>',
+    'gladiator':'<:gladiator:432310951409352726> ',
     'moonlord':'<:moonlord:432312622675918852>',
     'barbarian':'<:barbarian:432312622386380810>',
     'saint':'<:saint:432312622935703562>',
     'blood phantom':'<:bloodphantom:435785625611010058>',
-    'inquisitor':'<:inquisitor:436200563906969600>',
+    'inquisitor':'<:inquisitor:432312622512209924>',
     'illumia':'<:illumia:432312622671593474>',
-    'destroyer':'<:destroyer:436201107245760513>',
-    'ruina':'<:ruina:436201033350512644>',
+    'destroyer':'<:destroyer:432312622831108106>',
+    'ruina':'<:ruina:432312622885634049>',
     'oracle elder':'<:oracleelder:432312622931509248>',
 };
 
@@ -112,9 +112,9 @@ bot.on('message', function(message) {
     if (message.content === prefix + "officier"){
         var help_embed = new Discord.RichEmbed().setColor('#08ad00')
         .setTitle("__**Hierachie de la guide**__")
-        .addField("__Guild Master (GM) :__","- Dahren "+classeEmote['blood phantom']+" "+classeEmote['inquisitor'])
-        .addField("__Veteran (Officier) :__","- Seefield "+classeEmote['moonlord']+" "+classeEmote['illumia']+"\n- Eco / Felyne "+classeEmote['oracle elder']+" "+classeEmote['ruina']+"\n")
-        .addField("__Senior (Sous-officier) :__","- Memory "+classeEmote['saint']+" "+classeEmote['inquisitor']+"\n- Fred "+classeEmote['barbarian']+" "+classeEmote['destroyer']+"\n- Sevih "+classeEmote['gladiator']+"\n");
+        .addField("__Guild Master (GM) :__","- Dahren "+classeEmote['blood phantom']+classeEmote['inquisitor'])
+        .addField("__Veteran (Officier) :__","- Seefield "+classeEmote['moonlord']+classeEmote['illumia']+"\n- Eco / Felyne "+classeEmote['oracle elder']+classeEmote['ruina']+"\n")
+        .addField("__Senior (Sous-officier) :__","- Memory "+classeEmote['saint']+classeEmote['inquisitor']+"\n- Fred "+classeEmote['barbarian']+classeEmote['destroyer']+"\n- Sevih "+classeEmote['gladiator']+"\n");
         message.channel.send(help_embed);
         console.log('commande officier demandée.');
     }
