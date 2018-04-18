@@ -19,6 +19,10 @@ var classeEmote = {
     'gladiator':'<:gladiator:432310951409352726>',
     'moonlord':'<:moonlord:432312622675918852>',
     'barbarian':'<:barbarian:432312622386380810>',
+    'saint':'<:saint:432312622935703562>',
+    'blood phantom':'<:bloodphantom:435785625611010058>',
+    'inquisitor':'<inquisitor:436191905114751026>',
+    'illumia':'<:illumia:432312622671593474>',
 };
 
 var phraseClasse = [
