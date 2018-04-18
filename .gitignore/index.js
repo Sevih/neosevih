@@ -45,6 +45,10 @@ var phraseClasse = [
     "T'as pas de skill et t'es moche.... sois juste moche :",
 ];
 
+var idChan = {
+    'général':'432160833020100610',
+};
+
 
 bot.on('message', function(message) {
     if(message.author.equals(bot.user)) return;
