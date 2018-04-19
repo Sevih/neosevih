@@ -108,14 +108,14 @@ bot.on('message', function(message) {
         .addField("__Règles Ingame & Discord__ :","-à moins de bien connaître votre interlocuteur, les sujets de discussions suivants sont interdits : politique, antisémitisme, racisme, homophobie, sexisme ou toute incitation à la haine et toutes les choses du genre…\n-ne soyez pas trop susceptible non plus, les MMO sont remplis de trolls donc sachez relativiser.")
         .addField("__Règles Discord__ :","-utilisez les salons appropriés pour vos sujets de discussion.\n-réglez votre micro de façon à ne pas exploser les oreilles de vos interlocuteurs et de ne pas faire un remix de R2D2 croisé avec Jabba le Hutt.")
         .addField("__Passible de Kick__ :","-toute activité de plus de 20 jours pour laquelle vous n’aurez pas prévenu un officier.\n-tout non-respect des règles précédemment citées.\n-toute personne ne contribuant pas à la vie de la guilde.");
-        message.channel.send("**Voici les règles de la guilde, merci de les lires :**");
+        message.channel.send("**Voici les règles de la guilde, merci de les lire :**");
         message.channel.send(help_embed);
         console.log('commande rules demandée.');
     }
 
     if (message.content === prefix + "officier"){
         var help_embed = new Discord.RichEmbed().setColor('#08ad00')
-        .setTitle("__**Hierachie de la guide**__")
+        .setTitle("__**Hiérarchie de la guide**__")
         .addField("__Guild Master (GM) :__","- Dahren "+classeEmote['blood phantom']+classeEmote['inquisitor'])
         .addField("__Veteran (Officier) :__","- Seefield "+classeEmote['moonlord']+classeEmote['illumia']+"\n- Eco / Felyne "+classeEmote['oracle elder']+classeEmote['ruina']+"\n")
         .addField("__Senior (Sous-officier) :__","- Memory "+classeEmote['saint']+classeEmote['inquisitor']+"\n- Fred "+classeEmote['barbarian']+classeEmote['destroyer']+"\n- Sevih "+classeEmote['gladiator']+"\n");
@@ -132,7 +132,7 @@ bot.on('guildMemberAdd', member => {
         .addField("__Passible de Kick__ :","-toute activité de plus de 20 jours pour laquelle vous n’aurez pas prévenu un officier.\n-tout non-respect des règles précédemment citées.\n-toute personne ne contribuant pas à la vie de la guilde.");
 
     member.guild.channels.get(idChan['général']).send('Bienvenue **' + member.user.username + '** dans la guilde!'); 
-    member.guild.channels.get(idChan['général']).send("**Voici les règles de la guilde, merci de les lires :**");
+    member.guild.channels.get(idChan['général']).send("**Voici les règles de la guilde, merci de les lire :**");
     member.guild.channels.get(idChan['général']).send(help_embed);
 });
 
