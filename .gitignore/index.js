@@ -127,8 +127,8 @@ bot.on('message', function(message) {
         var help_embed = new Discord.RichEmbed().setColor('#08ad00')
         .setTitle("__**Hiérarchie de la guide**__")
         .addField("__Guild Master (GM) :__","- Dahren "+classeEmote['blood phantom']+classeEmote['inquisitor'])
-        .addField("__Veteran (Officier) :__","- Seefield "+classeEmote['moonlord']+classeEmote['illumia']+"\n- Eco / Felyne "+classeEmote['oracle elder']+classeEmote['ruina']+"\n")
-        .addField("__Senior (Sous-officier) :__","- Memory "+classeEmote['saint']+classeEmote['inquisitor']+"\n- Fred "+classeEmote['barbarian']+classeEmote['destroyer']+"\n- Sevih "+classeEmote['gladiator']+"\n");
+        .addField("__Veteran (Officier) :__","- Seefield "+classeEmote['moonlord']+classeEmote['illumia']+"\n- Eco / Felyne "+classeEmote['oracle elder']+classeEmote['ruina']+"\n- Fred "+classeEmote['barbarian']+classeEmote['destroyer']+"\n- Sevih "+classeEmote['gladiator']+"\n")
+        .addField("__Senior (Sous-officier) :__","- Memory "+classeEmote['saint']+classeEmote['inquisitor']);
         message.channel.send(help_embed);
         console.log('commande officier demandée.');
     }
