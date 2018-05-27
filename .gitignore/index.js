@@ -19,16 +19,17 @@ var classeClass = {
     'barbarian':'Warrior',
 };
 var classeEmote = {
-    'gladiator':'<:gladiator:432310951409352726> ',
-    'moonlord':'<:moonlord:432312622675918852>',
-    'barbarian':'<:barbarian:432312622386380810>',
-    'saint':'<:saint:432312622935703562>',
-    'blood phantom':'<:bloodphantom:435785625611010058>',
-    'inquisitor':'<:inquisitor:432312622512209924>',
-    'illumia':'<:illumia:432312622671593474>',
-    'destroyer':'<:destroyer:432312622831108106>',
-    'ruina':'<:ruina:432312622885634049>',
-    'oracle elder':'<:oracleelder:432312622931509248>',
+    'gladiator':'<:gladiator:450291221919957019>',
+    'moonlord':'<:moonlord:450291222125215745>',
+    'barbarian':'<:barbarian:450290788270604308>',
+    'saint':'<:saint:450291222515286016>',
+    'blood phantom':'<:bloodphantom:450295959751098370>',
+    'inquisitor':'<:inquisitor:450291222137929730>',
+    'illumia':'<:warmage:450291222658154516>',
+    'destroyer':'<:destroyer:450291221974220801>',
+    'ruina':'<:ruina:450291222141992974>',
+    'oracle elder':'<:oracleelder:450291221970026498>',
+    'boadicea':'<:boadicea:450296593564827669>',
 };
 
 var phraseClasse = [
@@ -126,9 +127,8 @@ bot.on('message', function(message) {
     if (message.content === prefix + "officier"){
         var help_embed = new Discord.RichEmbed().setColor('#08ad00')
         .setTitle("__**Hiérarchie de la guide**__")
-        .addField("__Guild Master (GM) :__","- Dahren "+classeEmote['blood phantom']+classeEmote['inquisitor'])
-        .addField("__Veteran (Officier) :__","- Seefield "+classeEmote['moonlord']+classeEmote['illumia']+"\n- Eco / Felyne "+classeEmote['oracle elder']+classeEmote['ruina']+"\n- Fred "+classeEmote['barbarian']+classeEmote['destroyer']+"\n- Sevih "+classeEmote['gladiator']+"\n")
-        .addField("__Senior (Sous-officier) :__","- Memory "+classeEmote['saint']+classeEmote['inquisitor']);
+        .addField("__Guild Master (GM) :__","- Sevih "+classeEmote['gladiator'])
+        .addField("__Veteran (Officier) :__","- Narutal "+classeEmote['destroyer']+"\n- Seishiro "+classeEmote['boadicea']+"\n- Dahren "+classeEmote['blood phantom'])
         message.channel.send(help_embed);
         console.log('commande officier demandée.');
     }
